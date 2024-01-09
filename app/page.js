@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Hero from "./_components/Hero";
 
-export default function Home() {
+export default function page() {
   return (
     <div>
       <Hero />
