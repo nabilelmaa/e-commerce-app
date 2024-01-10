@@ -8,7 +8,7 @@ function Hero() {
     <section className="bg-gray-50">
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-xl text-center">
-          <h1 className="text-3xl font-semibold sm:text-5xl">
+          <h1 className="text-black text-3xl font-semibold sm:text-5xl">
             Welcome to
             <strong className="font-bold text-primary sm:block">
               {" "}
@@ -16,7 +16,7 @@ function Hero() {
             </strong>
           </h1>
 
-          <p className="mt-4 sm:text-xl/relaxed">
+          <p className="mt-4 sm:text-xl/relaxed text-black">
             This is the best and the right place to make your purchase!
           </p>
 
