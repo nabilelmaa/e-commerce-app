@@ -1,0 +1,4 @@
+              {/* <strong className="font-bold text-black text-lg sm:text-xl md:text-2xl lg:text-1xl xl:text-4xl">
+                {" "}
+                Just<span className="font-bold text-primary">Choose </span>
+              </strong> */}

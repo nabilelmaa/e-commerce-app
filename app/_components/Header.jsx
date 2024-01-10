@@ -1,18 +1,21 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 shadow-md">
         <div className="flex h-16 items-center justify-between">
           <Link href="/">
             <div className="md:flex md:items-center md:gap-12">
-              {/* <Image src="/logo.svg" alt="logo" width={40} height={40} /> */}
-              <strong className="font-bold text-black text-lg sm:text-xl md:text-2xl lg:text-1xl xl:text-4xl">
-                {" "}
-                Just<span className="font-bold text-primary">Choose </span>
-              </strong>
+              <Image src="/jc-logo.png" alt="logo" width={45} height={45} />
             </div>
           </Link>
           <div className="hidden md:block">
@@ -20,7 +23,7 @@ function Header() {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-500 transition hover:text-primary"
                     href="/"
                   >
                     {" "}
@@ -30,7 +33,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-500 transition hover:text-primary"
                     href="/"
                   >
                     {" "}
@@ -100,8 +103,11 @@ function Header() {
               </div>
             </div>
 
-            <div className="block md:hidden">
-              <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+            <div className="md:hidden relative">
+              <button
+                onClick={toggleMobileMenu}
+                className="rounded bg-gray-100 p-2 text-gray-600 transition-transform hover:text-gray-600/75 transform duration-300"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -117,6 +123,42 @@ function Header() {
                   />
                 </svg>
               </button>
+              {isMobileMenuOpen && (
+                <div className="absolute top-10 right-0 w-18 bg-white rounded-md shadow-md overflow-hidden transition-transform duration-300 transform scale-y-100">
+                  <ul className="text-gray-500 p-4">
+                    <li>
+                      <a className="hover:text-primary" href="/">
+                        About
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover:text-primary" href="/">
+                        Careers
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover:text-primary" href="/">
+                        History
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover:text-primary" href="/">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover:text-primary" href="/">
+                        Projects
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover:text-primary" href="/">
+                        Blog
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>
