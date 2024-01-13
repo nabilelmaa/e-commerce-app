@@ -23,7 +23,9 @@ function ProductCard({ product }) {
           className="border rounded-t-lg h-[170px] object-cover"
         />
       ) : (
-        <div className="flex justify-center items-center max-w-[250px] h-[170px] bg-slate-200 rounded-t-lg animate-pulse"></div>
+        // <div className="flex justify-center items-center max-w-[250px] h-[170px] bg-slate-200 rounded-t-lg animate-pulse"></div>
+
+        <div className="skeleton h-32 w-full"></div>
       )}
 
       <div className="pt-2 max-w-[250px] bg-gray-100">
@@ -44,21 +46,20 @@ function ProductCard({ product }) {
           <div className="h-4 bg-slate-200 rounded animate-pulse"></div>
         )}
 
-        <div className="flex justify-between items-center max-w-[250px] rounded-md">
+        <div className="flex flex-col justify-between items-center max-w-[250px] rounded-md space-y-2">
           <button
-            className="btn flex-1 h-8 py-0.5 px-1 text-gray-100 bg-gray-400 border-none hover:bg-gray-500"
+            className="flex items-center justify-start w-full flex-grow h-8 py-0.5 px-1 text-gray-100 bg-gray-400 border-none hover:bg-gray-500 rounded-md transition-colors duration-200 ease-in-out"
             onClick={() => document.getElementById(modalId).showModal()}
           >
             <CgDetailsMore className="text-white" />
-            <span className="flex-grow text-center">Details</span>
+            <span className="ml-2">Details</span>
           </button>
-          <button className="btn flex-1 h-8 py-0.5 px-1 text-gray-100 bg-gray-500 border-none hover:bg-gray-600">
-            <span className="flex-grow text-center">Add to Cart</span>
-            <BsCart4 className="text-white" />
+          <button className="flex items-center justify-start w-full flex-grow h-8 py-0.5 px-1 text-gray-100 bg-gray-500 border-none hover:bg-gray-600 rounded-md transition-colors duration-200 ease-in-out">
+            <BsCart4 className="text-white mr-2" />
+            <span>Add to Cart</span>
           </button>
         </div>
       </div>
-
       <dialog id={modalId} className="modal">
         <ProductDetails product={product} />
       </dialog>

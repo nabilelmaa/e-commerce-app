@@ -12,7 +12,7 @@ function Pagination({ productsPerPage, totalProducts, paginate }) {
           <li key={number} className="mx-1">
             <button
               onClick={() => paginate(number)}
-              className="px-3 py-1 border border-gray-300 rounded-md hover:bg-primary hover:text-white transition-colors"
+              className="px-3 py-1 border border-gray-300 rounded-md hover:bg-gray-400 hover:text-white transition-colors"
             >
               {number}
             </button>

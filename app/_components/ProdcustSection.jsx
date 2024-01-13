@@ -5,6 +5,7 @@ import ProductsAPI from "../_utils/ProductsAPI";
 import { FaCircleArrowDown } from "react-icons/fa6";
 import BreadCrumb from "./BreadCrumb";
 import Pagination from "./Pagination";
+import Form from "./Form";
 
 function ProdcustSection() {
   const [products, setProducts] = useState([]);
@@ -33,7 +34,7 @@ function ProdcustSection() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="h-screen">
+    <div className="">
       <div className="pt-4 pb-4">
         <BreadCrumb />
       </div>
@@ -42,11 +43,14 @@ function ProdcustSection() {
           <p className="font-semibold text-[24px] flex-1 text-gray-700">
             Explore our popular products!
           </p>
+          
           <FaCircleArrowDown className="mx-2 animate-blink" />
           <div className="flex-1 text-right" lang="ar">
-            <p className="font-semibold text-[24px] flex-1 text-gray-700">!استكشف منتجاتنا الشهيرة</p>
+            <p className="font-semibold text-[24px] flex-1 text-gray-700">
+              !استكشف منتجاتنا الشهيرة
+            </p>
           </div>
-        </div>
+        </div> 
         <div className="pt-4">
           <ProductList products={currentProducts} />
         </div>
@@ -55,6 +59,9 @@ function ProdcustSection() {
           totalProducts={products.length}
           paginate={paginate}
         />
+      </div>
+      <div>
+        <Form />
       </div>
     </div>
   );

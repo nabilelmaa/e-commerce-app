@@ -12,7 +12,7 @@ function ProductDetails({ product }) {
       </form>
       <h3 className="font-bold text-lg">Product Details</h3>
       <div>
-        <h1>
+        <h1 className="text-gray-700">
             {product?.attributes?.category}
         </h1>
         <h2 className="direction-rtl text-right" lang="ar">

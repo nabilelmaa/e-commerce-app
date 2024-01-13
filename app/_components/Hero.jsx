@@ -22,17 +22,16 @@ function Hero() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/products">
-              <div className="flex items-center justify-center w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto">
+              <div className="inline-flex items-center justify-center rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto">
                 Get Started <IoArrowForwardCircleOutline className="ml-2" />
               </div>
             </Link>
 
-            <a
-              className="flex items-center justify-center w-full rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-              href="/about"
-            >
-              Learn More <CgMoreO className="ml-2" />
-            </a>
+            <Link href="/about">
+              <div className="inline-flex items-center justify-center rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto">
+                Learn More <CgMoreO className="ml-2" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
