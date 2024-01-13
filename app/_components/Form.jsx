@@ -7,7 +7,7 @@ function Form() {
         <p className="font-semibold text-gray-700">To contact us</p>
         <p className="font-semibold text-gray-700">للتواصل معنا</p>
       </div>
-      <form className="flex flex-col space-y-4">
+      <form className="flex flex-col space-y-4 pt-4">
         <input
           type="text"
           className="border border-gray-300 rounded-md py-2 px-4 bg-white"
