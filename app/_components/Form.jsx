@@ -10,22 +10,22 @@ function Form() {
       <form className="flex flex-col space-y-4">
         <input
           type="text"
-          className="border border-gray-300 rounded-md py-2 px-4"
+          className="border border-gray-300 rounded-md py-2 px-4 bg-white"
           placeholder="Name / الاسم"
         />
         <input
           type="tel"
-          className="border border-gray-300 rounded-md py-2 px-4"
+          className="border border-gray-300 rounded-md py-2 px-4 bg-white"
           placeholder="Phone / رقم الهاتف"
         />
         <input
           type="text"
-          className="border border-gray-300 rounded-md py-2 px-4"
+          className="border border-gray-300 rounded-md py-2 px-4 bg-white"
           placeholder="City / المدينة"
         />
         <input
           type="text"
-          className="border border-gray-300 rounded-md py-2 px-4"
+          className="border border-gray-300 rounded-md py-2 px-4 bg-white"
           placeholder="Address / العنوان"
         />
         <button
