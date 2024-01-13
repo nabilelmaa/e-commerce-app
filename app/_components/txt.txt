@@ -2,3 +2,41 @@
                 {" "}
                 Just<span className="font-bold text-primary">Choose </span>
               </strong> */}
+
+              {/* <h2 className="font-semibold text-gray-500">
+        {product?.attributes?.description}
+      </h2>
+      <p className="">MAD {product?.attributes?.price}</p> */}
+
+
+
+
+
+
+
+
+
+      {product?.attributes?.product_details?.data !== null &&
+                product?.attributes?.product_details?.data !== undefined &&
+                product?.attributes?.product_details?.data.map((detail, index) => (
+                  <div key={index}>
+                    <Image
+                      src={detail?.attributes?.url}
+                      alt={`Detail ${index + 1}`}
+                      width={250}
+                      height={250}
+                      className="border rounded-t-lg h-[170px] object-cover"
+                    />
+                  </div>
+      
+      ))}
+
+                      {/* <Image
+                  src={
+                    product[5]?.attributes?.product_details?.data?.attributes?.url
+                  }
+                  alt="banner"
+                  width={250}
+                  height={250}
+                  className="border rounded-t-lg h-[170px] object-cover"
+                /> */}

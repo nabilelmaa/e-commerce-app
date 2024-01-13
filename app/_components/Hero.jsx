@@ -8,7 +8,7 @@ function Hero() {
     <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-xl text-center">
-          <h1 className="p-8 text-black text-3xl font-semibold sm:text-5xl">
+          <h1 className="text-black text-3xl font-semibold sm:text-5xl">
             Welcome to
             <strong className="font-bold text-primary sm:block">
               {" "}
@@ -21,7 +21,7 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link href="/home">
+            <Link href="/products">
               <div className="flex items-center justify-center w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto">
                 Get Started <IoArrowForwardCircleOutline className="ml-2" />
               </div>

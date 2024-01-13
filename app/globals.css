@@ -23,3 +23,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+@keyframes arrow-blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Tailwind utility for the animation */
+.animate-blink {
+  animation: arrow-blink 2s linear infinite;
+}

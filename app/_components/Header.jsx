@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaCartShopping } from "react-icons/fa6";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,12 +11,12 @@ function Header() {
   };
 
   return (
-    <header className="bg-white">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 shadow-md">
+    <header className="bg-white shadow-2xl">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/">
             <div className="md:flex md:items-center md:gap-12">
-              <Image src="/jc-logo.png" alt="logo" width={45} height={45} />
+              <Image src="/logo-jc.png" alt="logo" width={45} height={45} />
             </div>
           </Link>
           <div className="hidden md:block">
@@ -85,6 +86,12 @@ function Header() {
           </div>
 
           <div className="flex items-center gap-4">
+            <Link href="/cart">
+              <div className="text-primary px-5 py-2.5 text-[20px]">
+                <FaCartShopping />
+              </div>
+            </Link>
+
             <div className="sm:flex sm:gap-4">
               <a
                 className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-rose-700"
