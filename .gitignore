@@ -35,5 +35,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/txt.txt
+#Files
+app/_components/txt.txt
+
 
