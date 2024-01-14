@@ -43,7 +43,7 @@ function Footer() {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-primary"
+                  className="text-gray-700 transition hover:text-rose-700"
                 >
                   <span className="sr-only">Instagram</span>
 

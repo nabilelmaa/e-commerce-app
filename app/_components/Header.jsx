@@ -24,7 +24,7 @@ function Header() {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-primary"
+                    className="text-gray-500 transition hover:text-gray-500/75"
                     href="/"
                   >
                     {" "}
@@ -34,7 +34,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-primary"
+                    className="text-gray-500 transition hover:text-gray-500/75"
                     href="/"
                   >
                     {" "}
@@ -94,7 +94,7 @@ function Header() {
 
             <div className="sm:flex sm:gap-4">
               <a
-                className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-rose-700"
+                className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-indigo-800"
                 href="/"
               >
                 Login

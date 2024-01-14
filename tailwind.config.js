@@ -16,7 +16,7 @@ module.exports = {
         rtl: "rtl",
       },
       colors: {
-        primary: "#e11d48",
+        primary: "#4338ca",
         secondary: "#2563eb"
       },
     },

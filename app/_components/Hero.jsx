@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { CgMoreO } from "react-icons/cg";
+import Modal from "../_components/Modal";
 
 function Hero() {
   return (
@@ -22,16 +23,17 @@ function Hero() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/products">
-              <div className="inline-flex items-center justify-center rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto">
+              <div className="inline-flex items-center justify-center rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-indigo-800 focus:outline-none focus:ring active:bg-indigo-700 sm:w-auto">
                 Get Started <IoArrowForwardCircleOutline className="ml-2" />
               </div>
             </Link>
 
             <Link href="/about">
-              <div className="inline-flex items-center justify-center rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto">
+              <div className="inline-flex items-center justify-center rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-indigo-800 focus:outline-none focus:ring active:text-indigo-700 sm:w-auto">
                 Learn More <CgMoreO className="ml-2" />
               </div>
             </Link>
+            {/* <Modal /> */}
           </div>
         </div>
       </div>

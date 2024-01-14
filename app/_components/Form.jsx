@@ -38,7 +38,7 @@ function Form() {
         />
         <button
           type="submit"
-          className="py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200 transition duration-300 ease-in-out"
+          className="py-2 px-4 bg-primary text-white rounded-md hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-blue-200 transition duration-300 ease-in-out"
         >
           Submit / إرسال
         </button>
