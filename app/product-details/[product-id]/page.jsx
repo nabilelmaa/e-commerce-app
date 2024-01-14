@@ -18,7 +18,7 @@ function ProductDetails({ product }) {
         <h2 className="direction-rtl text-right" lang="ar">
           {product?.attributes?.description}
         </h2>
-        <div className="flex justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-2 justify-between">
           {product.attributes.product_details.data.map((detail, index) => {
             const imageUrl = detail.attributes.url;
             if (imageUrl) {
