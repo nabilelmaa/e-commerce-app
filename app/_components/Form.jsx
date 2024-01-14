@@ -10,28 +10,28 @@ function Form() {
       <form className="flex flex-col space-y-4 pt-4">
         <input
           type="text"
-          className="border border-gray-300 focus:border-blue-500 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
+          className="border border-gray-300 focus:border-indigo-600 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
           placeholder="Name / الاسم"
           onFocus={(e) => e.target.classList.add("ring", "ring-blue-200")}
           onBlur={(e) => e.target.classList.remove("ring", "ring-blue-200")}
         />
         <input
           type="tel"
-          className="border border-gray-300 focus:border-blue-500 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
+          className="border border-gray-300 focus:border-indigo-600 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
           placeholder="Phone / رقم الهاتف"
           onFocus={(e) => e.target.classList.add("ring", "ring-blue-200")}
           onBlur={(e) => e.target.classList.remove("ring", "ring-blue-200")}
         />
         <input
           type="text"
-          className="border border-gray-300 focus:border-blue-500 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
+          className="border border-gray-300 focus:border-indigo-600 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
           placeholder="City / المدينة"
           onFocus={(e) => e.target.classList.add("ring", "ring-blue-200")}
           onBlur={(e) => e.target.classList.remove("ring", "ring-blue-200")}
         />
         <input
           type="text"
-          className="border border-gray-300 focus:border-blue-500 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
+          className="border border-gray-300 focus:border-indigo-600 rounded-md py-2 px-4 bg-white transition duration-300 ease-in-out"
           placeholder="Address / العنوان"
           onFocus={(e) => e.target.classList.add("ring", "ring-blue-200")}
           onBlur={(e) => e.target.classList.remove("ring", "ring-blue-200")}
