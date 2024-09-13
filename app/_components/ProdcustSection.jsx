@@ -17,14 +17,14 @@ function ProdcustSection() {
     getLatestProducts_();
   }, []);
 
-  // In ProdcustSection.jsx or wherever you're fetching data
+  
   const getLatestProducts_ = () => {
     ProductsAPI.getLatestProducts().then((response) => {
       setProducts(response.data.data);
     });
   };
 
-  // Get current products
+  
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = products.slice(
@@ -32,7 +32,7 @@ function ProdcustSection() {
     indexOfLastProduct
   );
 
-  // Change page
+  
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
